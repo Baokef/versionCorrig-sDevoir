@@ -60,21 +60,22 @@ elif mode_choisi == 2:
 elif mode_choisi == 3:
     print("bienvenu dans le juste prix !")
     Prix_max = int(input(f"Veuillez choisir le prix max {''}"))
+    prix_min = int(input(f"Veuillez choisir le prix min {''}"))
     nbr_essai = int(input(f"Veuillez choisir le nombre d'essais {''}"))
     if nbr_essai == 0:
         proposition_de_prix = int(input("Veuillez entrer votre prix : "))
-        juste_prix = randint(1, Prix_max)
+        juste_prix = randint(prix_min, Prix_max)
         while True:
             if proposition_de_prix < juste_prix:
                 print("c'est moins ! \n")
-                if essai == 0:
+                if nbr_essai == 0:
                     print("le juste prix etait de : ", juste_prix)
                 proposition_de_prix = int(
                     input("Veuillez entrer votre prix : "))
 
             elif proposition_de_prix > juste_prix:
                 print("c'est plus ! \n")
-                if essai == 0:
+                if nbr_essai == 0:
                     print("le juste prix etait de : ", juste_prix)
                 proposition_de_prix = int(
                     input("Veuillez entrer votre prix : "))
