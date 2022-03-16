@@ -7,11 +7,11 @@ propostionDePrix = int(input("Veuillez entrer votre prix : "))
 justPrix = randint(1, 100)
 while True:
     if propostionDePrix < justPrix:
-        print("c'est moins ! \n")
+        print("c'est pluss ! \n")
         propostionDePrix = int(input("Veuillez entrer votre prix : "))
 
     elif propostionDePrix > justPrix:
-        print("c'est plus ! \n")
+        print("c'est moins ! \n")
         propostionDePrix = int(input("Veuillez entrer votre prix : "))
 
     elif propostionDePrix == justPrix:
